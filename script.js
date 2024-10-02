@@ -28,11 +28,11 @@ function handleCellClick(event) {
     
     if (board[cellIndex] !== '' || !gameActive) return;
 
-    board[cellIndex] = currentPlayer === player1 ? 'X' : 'O';
+    board[cellIndex] = currentPlayer === player1 ? 'x' : 'O';
     event.target.textContent = board[cellIndex];
 
     if (checkWinner()) {
-        document.querySelector('.message').textContent = `${currentPlayer}, congratulations you won!`;
+        document.querySelector('.message').textContent = `${currentPlayer} congratulations you won!`;
         gameActive = false;
         return;
     }
