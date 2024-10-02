@@ -1,1 +1,52 @@
 /*  your css code here. If applicable */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+#name-input input {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+}
+
+#name-input button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#game {
+    margin-top: 20px;
+}
+
+.message {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+}
+
+.cell {
+    background-color: #f4f4f4;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+}
