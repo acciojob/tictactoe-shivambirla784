@@ -28,7 +28,7 @@ function handleCellClick(event) {
     
     if (board[cellIndex] !== '' || !gameActive) return;
 
-    board[cellIndex] = currentPlayer === player1 ? 'x' : 'O';
+    board[cellIndex] = currentPlayer === player1 ? 'x' : 'o';
     event.target.textContent = board[cellIndex];
 
     if (checkWinner()) {
